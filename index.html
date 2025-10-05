@@ -31,6 +31,7 @@
         opacity: 0;
         transform: translateY(-10px);
         transition: all 0.3s ease-in-out;
+        z-index: 999;
       }
       .nav-links.show {
         display: flex;
@@ -62,7 +63,7 @@
       from { opacity: 0; transform: translateX(40px); }
       to { opacity: 1; transform: translateX(0); }
     }
-  </style>
+</style>
 <style>
 /* ============ NAVIGATION ============ */
 .main-nav { position: relative; }
@@ -182,39 +183,33 @@
       }
     });
   }, { threshold: 0.1 });
+
   document.querySelectorAll(".fade-in-up, .slide-in-left, .slide-in-right").forEach(el => {
     observer.observe(el);
   });
 
-  // Mobile Menu Toggle (clean version)
+  // Mobile Menu Toggle
   document.addEventListener("DOMContentLoaded", () => {
-    const menuBtn = document.querySelector(".mobile-menu-btn i");
+    const menuBtnWrapper = document.querySelector(".mobile-menu-btn");
+    const menuIcon = menuBtnWrapper.querySelector("i");
     const navLinks = document.querySelector(".nav-links");
-    const menuWrapper = document.querySelector(".mobile-menu-btn");
 
-    if (menuBtn && navLinks && menuWrapper) {
-      menuWrapper.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
+    menuBtnWrapper.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
 
-        // Switch icon
-        if (navLinks.classList.contains("show")) {
-          menuBtn.classList.remove("fa-bars");
-          menuBtn.classList.add("fa-times");
-        } else {
-          menuBtn.classList.remove("fa-times");
-          menuBtn.classList.add("fa-bars");
-        }
+      // Icon switch
+      menuIcon.classList.toggle("fa-bars");
+      menuIcon.classList.toggle("fa-times");
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+        menuIcon.classList.add("fa-bars");
+        menuIcon.classList.remove("fa-times");
       });
-
-      // Close menu on link click
-      navLinks.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
-          navLinks.classList.remove("show");
-          menuBtn.classList.remove("fa-times");
-          menuBtn.classList.add("fa-bars");
-        });
-      });
-    }
+    });
   });
 </script>
 </body>
