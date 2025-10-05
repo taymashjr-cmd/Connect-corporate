@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="80" viewBox="0 0 300 80">
+  <style>
+    .text-primary { font: bold 28px 'Arial', sans-serif; fill: #3A4150; }
+    .text-secondary { font: bold 28px 'Arial', sans-serif; fill: #FF6600; }
+    .text-tagline { font: 14px 'Arial', sans-serif; fill: #3A4150; }
+    .icon-circle { fill: #FF6600; }
+    .icon-path { fill: #FFFFFF; }
+    .connect-line { stroke: #3A4150; stroke-width: 2; }
+  </style>
+  
+  <!-- Logo Icon -->
+  <circle class="icon-circle" cx="30" cy="40" r="25"/>
+  <path class="icon-path" d="M30,25 L20,35 L25,35 L25,45 L35,45 L35,35 L40,35 Z"/>
+  
+  <!-- Connection Lines -->
+  <line class="connect-line" x1="55" y1="40" x2="70" y2="40"/>
+  
+  <!-- Text Elements -->
+  <text class="text-primary" x="75" y="45">Connect</text>
+  <text class="text-secondary" x="170" y="45">+Funda</text>
+  <text class="text-tagline" x="75" y="65">Connectivity is the Foundation</text>
+  
+  <!-- Network Dots -->
+  <circle fill="#3A4150" cx="200" cy="25" r="3"/>
+  <circle fill="#3A4150" cx="220" cy="20" r="3"/>
+  <circle fill="#3A4150" cx="240" cy="30" r="3"/>
+  <circle fill="#FF6600" cx="260" cy="25" r="3"/>
+  
+  <!-- Connection Lines -->
+  <line stroke="#3A4150" stroke-width="1" x1="200" y1="25" x2="220" y2="20"/>
+  <line stroke="#3A4150" stroke-width="1" x1="220" y1="20" x2="240" y2="30"/>
+  <line stroke="#FF6600" stroke-width="1" x1="240" y1="30" x2="260" y2="25"/>
+</svg>

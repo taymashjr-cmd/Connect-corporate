@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Connect+Funda</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<!-- ✅ Unified Animation CSS -->
+<style>
+/* Hidden state */
+.animate-fade-up, .animate-slide-left, .animate-slide-right {
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+.animate-fade-up {
+  transform: translateY(30px);
+}
+.animate-slide-left {
+  transform: translateX(-40px);
+}
+.animate-slide-right {
+  transform: translateX(40px);
+}
+
+/* Visible state */
+.show.animate-fade-up,
+.show.animate-slide-left,
+.show.animate-slide-right {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+/* Delay helpers */
+.delay-1 { transition-delay: 0.3s; }
+.delay-2 { transition-delay: 0.6s; }
+.delay-3 { transition-delay: 0.9s; }
+</style>
+<style>
+/* ============ NAVIGATION ============ */
+.main-nav { position: relative; }
+.mobile-menu-btn { display: none; font-size: 26px; cursor: pointer; }
+.nav-links li a { text-decoration: none; color: #333; font-weight: 500; }
+
+@media (max-width: 768px) {
+  .mobile-menu-btn { display: block; color: #333; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+  }
+  .nav-links.show { display: flex; opacity: 1; transform: translateY(0); }
+}
+</style></head>
+<body>
+<!-- Header -->
+<style>
+      /* Mobile menu adjustments */
+      .main-nav {
+        position: relative;
+      }
+
+      .mobile-menu-btn {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      /* Hide menu on small screens */
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          background: #fff;
+          width: 200px;
+          padding: 15px;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+          opacity: 0;
+          transform: translateY(-10px);
+          transition: all 0.3s ease-in-out;
+        }
+        .nav-links.show {
+          display: flex;
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .mobile-menu-btn {
+          display: block;
+          color: #333;
+        }
+      }
+  </style>
+
+<body>
+<!-- Header -->
+<header>
+<div class="container" style="display:flex; align-items:center; justify-content:space-between;">
+<!-- Logo Left -->
+<div class="logo">
+<a href="index.html">
+<img alt="Connect+Funda Logo" src="images/tt.png"/>
+</a>
+</div>
+<!-- Nav Right -->
+<nav class="main-nav"><div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+<ul class="nav-links" style="display:flex; gap:20px; list-style:none; margin:0; padding:0;">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a class="active" href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+</div>
+</header>
+<!-- Page Banner -->
+<!-- Page Banner -->
+<section class="page-banner animate-fade-up">
+<div class="container">
+<h1 class="animate-slide-left delay-1">Our Services</h1>
+<p class="animate-fade-up delay-2" style="text-align: center; margin: 0 auto; display: block; max-width: 800px;">
+        Comprehensive digital solutions for educational institutions
+    </p>
+</div>
+</section>
+<!-- Services Overview -->
+<section class="services-overview">
+<div class="container">
+<div class="section-header">
+<h2 class="animate-slide-left">How We Can Help You</h2>
+<div class="underline animate-fade-up delay-1"></div>
+</div>
+<p class="animate-fade-up delay-2" style="text-align: center; margin: 0 auto; display: block; max-width: 800px;">
+        We provide a range of services designed to enhance digital access and educational outcomes.
+      </p>
+</div>
+</section>
+<!-- ✅ Animations CSS -->
+<style>
+/* Base hidden state */
+.animate-fade-up, .animate-slide-left {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-slide-left {
+  transform: translateX(-40px);
+}
+
+.show.animate-fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.show.animate-slide-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Delay helpers */
+.delay-1 { transition-delay: 0.3s; }
+.delay-2 { transition-delay: 0.6s; }
+.delay-3 { transition-delay: 0.9s; }
+</style>
+<!-- ✅ Animation Script -->
+<script>
+const animEls = document.querySelectorAll('.animate-fade-up, .animate-slide-left');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+      }
+  });
+}, { threshold: 0.1 });
+
+animEls.forEach(el => observer.observe(el));
+</script>
+<!-- Digital Infrastructure -->
+<section class="service-detail anim-fade-up">
+<div class="container">
+<div class="service-content">
+<div class="service-text anim-slide-left delay-0">
+<h3>Digital Infrastructure</h3>
+<p>We design, install, and maintain comprehensive digital infrastructure solutions for educational institutions, including:</p>
+<ul>
+<li>Internet connectivity setup</li>
+<li>WiFi network installation</li>
+<li>Network security implementation</li>
+<li>Server and storage solutions</li>
+<li>Power backup infrastructure</li>
+</ul>
+<a class="btn btn-primary" href="contact.html">Request Service</a>
+</div>
+<div class="service-image anim-slide-right delay-1">
+<img alt="Digital Infrastructure" src="images/infra.jpeg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Connectivity Solutions -->
+<section class="service-detail alt-bg anim-fade-up">
+<div class="container">
+<div class="service-content reverse">
+<div class="service-text anim-slide-right delay-0">
+<h3>Connectivity Solutions</h3>
+<p>We provide affordable and reliable connectivity solutions tailored for educational needs:</p>
+<ul>
+<li>Mobile data plans for students and educators</li>
+<li>Broadband connectivity for institutions</li>
+<li>Specialized educational data packages</li>
+<li>Zero-rated educational content access</li>
+<li>Connectivity management systems</li>
+</ul>
+<a class="btn btn-primary" href="contact.html">Request Service</a>
+</div>
+<div class="service-image anim-slide-left delay-1">
+<img alt="Connectivity Solutions" src="images/cs.jpeg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Computer Lab Setup -->
+<section class="service-detail anim-fade-up">
+<div class="container">
+<div class="service-content">
+<div class="service-text anim-slide-left delay-0">
+<h3>Computer Lab Setup</h3>
+<p>We establish modern computer labs that enhance the learning experience:</p>
+<ul>
+<li>Computer hardware procurement and installation</li>
+<li>Educational software setup</li>
+<li>Lab network configuration</li>
+<li>Maintenance and support services</li>
+<li>Teacher training and orientation</li>
+</ul>
+<a class="btn btn-primary" href="contact.html">Request Service</a>
+</div>
+<div class="service-image anim-slide-right delay-1">
+<img alt="Computer Lab Setup" src="images/comp lab.jpeg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Educational Technology -->
+<section class="service-detail alt-bg anim-fade-up">
+<div class="container">
+<div class="service-content reverse">
+<div class="service-text anim-slide-right delay-0">
+<h3>Educational Technology</h3>
+<p>We implement educational technology solutions that enhance teaching and learning:</p>
+<ul>
+<li>Digital learning platforms</li>
+<li>Educational content access</li>
+<li>Interactive learning tools</li>
+<li>Student progress tracking systems</li>
+<li>Remote learning capabilities</li>
+</ul>
+<a class="btn btn-primary" href="contact.html">Request Service</a>
+</div>
+<div class="service-image anim-slide-left delay-1">
+<img alt="Educational Technology" src="images/edu.jpeg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Training & Support -->
+<section class="service-detail anim-fade-up">
+<div class="container">
+<div class="service-content">
+<div class="service-text anim-slide-left delay-0">
+<h3>Training &amp; Support</h3>
+<p>We provide comprehensive training and ongoing support:</p>
+<ul>
+<li>Teacher technology training</li>
+<li>IT staff capacity building</li>
+<li>Student digital literacy programs</li>
+<li>Technical support services</li>
+<li>Maintenance and troubleshooting</li>
+</ul>
+<a class="btn btn-primary" href="contact.html">Request Service</a>
+</div>
+<div class="service-image anim-slide-right delay-1">
+<img alt="Training &amp; Support" src="images/training.jpeg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- ✅ Extra CSS -->
+<style>
+  .service-detail .service-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 0;
+  }
+  
+  .service-detail .service-text,
+  .service-detail .service-image {
+    flex: 1 1 45%;
+    min-width: 300px;
+  }
+  
+  .service-detail .service-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  /* Reverse layout */
+  .service-detail .service-content.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Animation */
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 0.8s ease-out;
+  }
+  
+  .fade-in-right.visible,
+  .fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  </style>
+<!-- ✅ Scroll Animation Script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll(".service-detail");
+  
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -50px 0px"
+    };
+  
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.querySelectorAll(".service-text, .service-image").forEach((el, i) => {
+          // Alternate left/right animation
+          el.classList.add(i % 2 === 0 ? "fade-in-left" : "fade-in-right");
+          setTimeout(() => el.classList.add("visible"), i * 200);
+        });
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+  
+    sections.forEach(section => {
+      appearOnScroll.observe(section);
+    });
+  });
+  </script>
+<!-- Call to Action -->
+<section class="cta animate-fade-up">
+<div class="container">
+<h2 class="animate-slide-left delay-1">Ready to Transform Your Educational Institution?</h2>
+<p class="animate-fade-up delay-2">Contact us today to discuss how we can help you achieve your digital transformation goals.</p>
+<a class="btn btn-light animate-fade-up delay-3" href="contact.html">Get in Touch</a>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="footer-content animate-fade-up">
+<div class="footer-logo">
+<img alt="Connect+Funda Logo" src="images/logo-full.png" style="max-height: 60px;"/>
+<p><strong>Connectivity is the Foundation</strong> - Expanding and accelerating access to the digital world for educational institutions.</p>
+</div>
+<div class="footer-links">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer-contact">
+<h3>Contact Us</h3>
+<p><i class="fas fa-map-marker-alt"></i> Cube WS, 9 The Straight St, Pineslopes AH 2191</p>
+<p><i class="fas fa-phone"></i> 082 953 5091</p>
+<p><i class="fas fa-envelope"></i> sales@connectedsmartschools.com</p>
+</div>
+<div class="footer-social">
+<h3>Follow Us</h3>
+<div class="social-icons">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom animate-fade-up delay-2">
+<p>© 2025 Connect+Funda. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<script src="js/script.js"></script>
+<!-- ✅ Unified Scroll Animation Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const animEls = document.querySelectorAll(
+    ".animate-fade-up, .animate-slide-left, .animate-slide-right"
+  );
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target); // Animate once
+      }
+    });
+  }, { threshold: 0.1 });
+
+  animEls.forEach(el => observer.observe(el));
+});
+</script>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.querySelector(".mobile-menu-btn i");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuBtn.parentElement.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    if (navLinks.classList.contains("show")) {
+      menuBtn.classList.remove("fa-bars");
+      menuBtn.classList.add("fa-times");
+    } else {
+      menuBtn.classList.remove("fa-times");
+      menuBtn.classList.add("fa-bars");
+    }
+  });
+});
+</script></body></html>

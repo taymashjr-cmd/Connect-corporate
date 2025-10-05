@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | Connect+Funda</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<style>
+/* ============ NAVIGATION ============ */
+.main-nav { position: relative; }
+.mobile-menu-btn { display: none; font-size: 26px; cursor: pointer; }
+.nav-links li a { text-decoration: none; color: #333; font-weight: 500; }
+
+@media (max-width: 768px) {
+  .mobile-menu-btn { display: block; color: #333; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+  }
+  .nav-links.show { display: flex; opacity: 1; transform: translateY(0); }
+}
+</style></head>
+<body>
+<style>
+    /* Mobile menu adjustments */
+    .main-nav {
+      position: relative;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Hide menu on small screens */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fff;
+        width: 200px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
+      }
+      .nav-links.show {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .mobile-menu-btn {
+        display: block;
+        color: #333;
+      }
+    }
+</style>
+
+<body>
+<!-- Header -->
+<header>
+<div class="container" style="display:flex; align-items:center; justify-content:space-between;">
+<!-- Logo Left -->
+<div class="logo">
+<a href="index.html">
+<img alt="Connect+Funda Logo" src="images/tt.png"/>
+</a>
+</div>
+<!-- Nav Right -->
+<nav class="main-nav"><div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+<ul class="nav-links" style="display:flex; gap:20px; list-style:none; margin:0; padding:0;">
+<li><a href="index.html">Home</a></li>
+<li><a class="active" href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+</div>
+</header>
+<!-- Page Banner -->
+<section class="page-banner">
+<div class="container">
+<h1 class="animate-slide-left">Revolutionizing Education Through Connectivity</h1>
+<p class="animate-fade-up delay-1">We're on a mission to bridge the digital divide in education by providing affordable, accessible mobile connectivity tailored for learning.</p>
+</div>
+</section>
+<!-- Mission & Vision -->
+<section class="mission-vision">
+<div class="container">
+<div class="mission-vision-grid">
+<div class="mission-box animate-fade-up">
+<div class="icon-box">
+<i class="fas fa-bullseye"></i>
+</div>
+<h3 class="animate-slide-left">Our Mission</h3>
+<p>To democratize access to quality education by providing affordable mobile connectivity solutions...</p>
+</div>
+<div class="vision-box animate-fade-up delay-1">
+<div class="icon-box">
+<i class="fas fa-eye"></i>
+</div>
+<h3 class="animate-slide-left delay-1">Our Vision</h3>
+<p>To become the leading educational technology platform in Africa...</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Executive Team Section -->
+<!-- Executive Team Section -->
+<section class="team-section exec-section" id="executive-team">
+<div class="container">
+<h2 class="section-title animate-slide-left">Our Leadership Team</h2>
+<p class="section-subtitle animate-fade-up delay-1" style="text-align: center;">
+          Meet the leadership driving Connect+Funda’s vision, strategy, and innovation.
+      </p>
+<div class="exec-team">
+<div class="exec-card animate-fade-up delay-1">
+<img alt="Executive 1" class="exec-img" src="images/Ndab 2.png">
+<h3 class="animate-slide-left delay-1">Ndaba Moyo</h3>
+<p class="exec-position">CEO &amp; Founder</p>
+<p class="exec-bio">Ndaba Moyo is a Chartered Accountant with over 20 years of experience in investment banking and corporate leadership</p>
+<div class="exec-social">
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+</img></div>
+<div class="exec-card animate-fade-up delay-2">
+<img alt="Executive 2" class="exec-img" src="images/go.png"/>
+<h3 class="animate-slide-left delay-2">Godfrey Marange</h3>
+<p class="exec-position">CTO &amp; Founder</p>
+<p class="exec-bio">Godfrey oversees operations, ensuring seamless execution and strategic growth across the platform.</p>
+<div class="exec-social">
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+<div class="exec-card animate-fade-up delay-3">
+<img alt="Executive 3" class="exec-img" src="images/garth.png"/>
+<h3 class="animate-slide-left delay-3">Garth Walker</h3>
+<p class="exec-position">Chief Sales Officer</p>
+<p class="exec-bio">Entrepreneurial minded Business Executive,CSO and Sales Team Leader with over 25 years business development experience.</p>
+<div class="exec-social">
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Media Styles -->
+<style>
+.exec-social {
+  margin-top: 10px;
+}
+.exec-social a {
+  color: #ff6600; /* Orange to match branding */
+  margin: 0 5px;
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+.exec-social a:hover {
+  transform: scale(1.2);
+}
+</style>
+<!-- Our Story -->
+<section class="our-story">
+<div class="container">
+<div class="section-header">
+<h2 class="animate-slide-left">Our Story</h2>
+<div class="underline"></div>
+</div>
+<div class="story-content animate-fade-up delay-1">
+<p>
+            Connect+Funda was born from the recognition that mobile connectivity and education are inseparable in the modern world.
+            In South Africa, where educational inequality remains a significant challenge, we recognized that traditional mobile network operators weren't addressing the unique needs of the education sector. Students were struggling with expensive data costs, parents lacked visibility into their children's digital learning activities, and teachers needed better tools to support their students' connectivity needs.
+            Connect+Funda emerged as South Africa's first Mobile Virtual Network Operator (MVNO) designed specifically for education. By partnering with established network infrastructure providers and educational content platforms, we created a unique ecosystem that combines affordable connectivity with educational value.
+            Our platform goes beyond traditional mobile services by integrating gamified learning rewards, comprehensive parental controls, and zero-rated access to educational content. This holistic approach ensures that every rand spent on connectivity contributes directly to educational outcomes.
+          </p>
+</div>
+</div>
+</section>
+<!-- Our Core Values -->
+<section class="our-values">
+<div class="container">
+<div class="section-header">
+<h2 class="animate-slide-left">Our Core Values</h2>
+<div class="underline"></div>
+</div>
+<p class="section-intro animate-fade-up delay-1" style="text-align: center;">
+        These values guide every decision we make and every feature we develop.
+    </p>
+<div class="values-grid">
+<div class="value-card animate-fade-up delay-1">
+<div class="value-icon"><i class="fas fa-graduation-cap"></i></div>
+<h3 class="animate-slide-left delay-1">Educational Focus</h3>
+<p>Everything we do is centered around improving educational outcomes and accessibility.</p>
+</div>
+<div class="value-card animate-fade-up delay-2">
+<div class="value-icon"><i class="fas fa-hands-helping"></i></div>
+<h3 class="animate-slide-left delay-2">Community Impact</h3>
+<p>We're committed to making a positive difference in South African communities.</p>
+</div>
+<div class="value-card animate-fade-up delay-3">
+<div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+<h3 class="animate-slide-left delay-3">Innovation</h3>
+<p>We continuously innovate to provide cutting-edge solutions for modern education.</p>
+</div>
+<div class="value-card animate-fade-up delay-3">
+<div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+<h3 class="animate-slide-left delay-3">Trust &amp; Security</h3>
+<p>We prioritize the safety and security of our users, especially young learners.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Animation Styles -->
+<style>
+/* Fade up animation */
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s ease-in-out;
+}
+.animate-fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide left animation */
+.animate-slide-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease-in-out;
+}
+.animate-slide-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Delays */
+.delay-1 { transition-delay: 0.3s; }
+.delay-2 { transition-delay: 0.6s; }
+.delay-3 { transition-delay: 0.9s; }
+</style>
+<!--  Animation Script -->
+<script>
+const animEls = document.querySelectorAll('.animate-fade-up, .animate-slide-left');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if(entry.isIntersecting) entry.target.classList.add('show');
+  });
+}, { threshold: 0.1 });
+
+animEls.forEach(el => observer.observe(el));
+</script>
+<!-- Supporting Teams Section -->
+<!-- Supporting Teams Section -->
+<section class="team-section support-section" id="supporting-teams">
+<div class="container">
+<h2 class="section-title animate-slide-left">Our Teams</h2>
+<p class="section-subtitle animate-fade-up delay-1">
+          Connect+Funda is powered by a diverse team of experts passionate about education and technology.
+      </p>
+<div class="supporting-teams">
+<!-- Development Team -->
+<div class="team-card animate-fade-up delay-1 team-card-bordered">
+<div class="team-icon">
+<img alt="icon" src="https://cdn-icons-png.flaticon.com/512/456/456212.png"/>
+</div>
+<h4 class="animate-slide-left delay-1">Development Team</h4>
+<p class="highlight">Platform Architecture &amp; Development</p>
+<p>Expert team responsible for building the comprehensive Connect+Funda platform.</p>
+<div class="team-social">
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+<!-- Educational Advisors -->
+<div class="team-card animate-fade-up delay-2 team-card-bordered">
+<div class="team-icon">
+<img alt="icon" src="https://cdn-icons-png.flaticon.com/512/456/456212.png"/>
+</div>
+<h4 class="animate-slide-left delay-2">Educational Advisors</h4>
+<p class="highlight">Curriculum &amp; Content Strategy</p>
+<p>Educational experts ensuring our platform meets real learning needs.</p>
+<div class="team-social">
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+<!-- Technology Partners -->
+<div class="team-card animate-fade-up delay-3 team-card-bordered">
+<div class="team-icon">
+<img alt="icon" src="https://cdn-icons-png.flaticon.com/512/456/456212.png"/>
+</div>
+<h4 class="animate-slide-left delay-3">Technology Partners</h4>
+<p class="highlight">Infrastructure &amp; Network</p>
+<p>Strategic partnerships ensuring reliable connectivity and platform performance.</p>
+<div class="team-social">
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ✅ Social Media Styles + Card Border -->
+<style>
+/* Add orange border around each card */
+.team-card-bordered {
+  border: 2px solid #FF6600;
+  border-radius: 12px; /* Keep existing style */
+  padding: 25px; /* Keep spacing consistent */
+}
+
+/* Social Media Styles */
+.team-social {
+  margin-top: 10px;
+}
+.team-social a {
+  color: #ff6600; /* Orange branding */
+  margin: 0 5px;
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+.team-social a:hover {
+  transform: scale(1.2);
+}
+</style>
+<!-- ✅ Animation Script (if not already on the page) -->
+<script>
+const animElsTeams = document.querySelectorAll('.animate-fade-up, .animate-slide-left');
+const observerTeams = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if(entry.isIntersecting) entry.target.classList.add('show');
+  });
+}, { threshold: 0.1 });
+
+animElsTeams.forEach(el => observerTeams.observe(el));
+</script>
+<style>
+  /* General Section Styling */
+  .team-section {
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .section-subtitle {
+    margin-bottom: 40px;
+    font-size: 1rem;
+  }
+  
+  /* Exec Section (Orange BG) */
+  .exec-section {
+    background: #ff6600;
+  }
+  .exec-section .section-subtitle {
+    color: #fff;
+  }
+  .exec-team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .exec-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #3A4150; /* Blue-gray text */
+  }
+  .exec-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  .exec-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .exec-position {
+    color: #ff6600;
+    font-weight: 600;
+    margin: 8px 0;
+  }
+  .exec-bio {
+    font-size: 0.95rem;
+    color: #3A4150;
+  }
+  
+  /* Supporting Section (Light BG) */
+  .support-section {
+    background: #f9fafb;
+    color: #3A4150;
+  }
+  .supporting-teams {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .team-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 280px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    color: #3A4150;
+  }
+  .team-icon {
+    background: #ff6600;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+  }
+  .team-icon img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1); /* White icons */
+  }
+  .team-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .highlight {
+    color: #ff6600;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  </style>
+<!-- Call to Action -->
+<!-- Call to Action -->
+<section class="cta">
+<div class="container">
+<h2 class="animate-slide-left">Ready to Transform Educational Connectivity?</h2>
+<p class="animate-fade-up delay-1">
+          Contact us today to discuss how we can help you achieve your digital transformation goals.
+      </p>
+<a class="btn btn-light animate-fade-up delay-2" href="contact.html">Get in Touch</a>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container">
+<div class="footer-content">
+<div class="footer-logo animate-fade-up">
+<img alt="Connect+Funda Logo" src="images/logo-full.png" style="max-height: 120px;"/>
+<p><strong>Connectivity is the Foundation</strong> - Expanding and accelerating access to the digital world for educational institutions.</p>
+</div>
+<div class="footer-links animate-fade-up delay-1">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer-contact animate-fade-up delay-2">
+<h3>Contact Us</h3>
+<p><i class="fas fa-map-marker-alt"></i> Cube WS, 9 The Straight St, Pineslopes AH 2191</p>
+<p><i class="fas fa-phone"></i> 082 953 5091</p>
+<p><i class="fas fa-envelope"></i> sales@connectedsmartschools.com</p>
+</div>
+<div class="footer-social animate-fade-up delay-3">
+<h3>Follow Us</h3>
+<div class="social-icons">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+</div>
+<div class="footer-bottom animate-fade-up delay-4">
+<p>© 2025 Connect+Funda. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+<!-- ✅ Animation Script (add if not already included) -->
+<script>
+const animElsFooter = document.querySelectorAll('.animate-fade-up, .animate-slide-left');
+const observerFooter = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if(entry.isIntersecting) entry.target.classList.add('show');
+  });
+}, { threshold: 0.1 });
+
+animElsFooter.forEach(el => observerFooter.observe(el));
+</script>
+<script src="js/script.js"></script>
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.querySelector(".mobile-menu-btn i");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuBtn.parentElement.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+    if (navLinks.classList.contains("show")) {
+      menuBtn.classList.remove("fa-bars");
+      menuBtn.classList.add("fa-times");
+    } else {
+      menuBtn.classList.remove("fa-times");
+      menuBtn.classList.add("fa-bars");
+    }
+  });
+});
+</script></body></html>
