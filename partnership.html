@@ -1,0 +1,717 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us | Connect+Funda</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- AOS Animation Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+        <style>
+            /* Mobile menu adjustments */
+            .main-nav {
+            position: relative;
+            }
+
+            .mobile-menu-btn {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            }
+
+            /* Hide menu on small screens */
+            @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: #fff;
+                width: 200px;
+                padding: 15px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                opacity: 0;
+                transform: translateY(-10px);
+                transition: all 0.3s ease-in-out;
+            }
+            .nav-links.show {
+                display: flex;
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .mobile-menu-btn {
+                display: block;
+                color: #333;
+            }
+            }
+        </style>
+    
+<style>
+/* NAVIGATION */
+.main-nav { position: relative; }
+.mobile-menu-btn { display: none; font-size: 26px; cursor: pointer; }
+.nav-links li a { text-decoration: none; color: #333; font-weight: 500; }
+
+@media (max-width: 768px) {
+  .mobile-menu-btn { display: block; color: #333; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+  }
+  .nav-links.show { display: flex; opacity: 1; transform: translateY(0); }
+}
+
+/* Animations */
+.fade-in-up, .slide-in-left, .slide-in-right { opacity: 0; }
+.fade-in-up.animate { animation: fadeInUp 1.2s ease-out forwards; }
+.slide-in-left.animate { animation: slideInLeft 1.2s ease-out forwards; }
+.slide-in-right.animate { animation: slideInRight 1.2s ease-out forwards; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+</style>
+
+</head>
+    <body>
+        <!-- Header -->
+<header>
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between;">
+    <!-- Logo Left -->
+    <div class="logo">
+      <a href="index.html">
+        <img alt="Connect+Funda Logo" src="images/tt.png"/>
+      </a>
+    </div>
+    <!-- Nav Right -->
+    <nav class="main-nav">
+      <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+      <ul class="nav-links" style="display:flex; gap:20px; list-style:none; margin:0; padding:0;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="partnership.html">Partners</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+<div class="fade-in-up">
+            <div class="container">
+                <h1>Partnership <span class="highlight">Opportunities</span></h1>
+                <p>Join us in revolutionizing education through strategic partnerships that create meaningful impact across South Africa's learning landscape.</p>
+            </div>
+        </div>
+</section>
+
+    <!-- Partnership Types Section -->
+<section class="partnership-types" style="padding:80px 0; background-color:#f9f9f9;">
+  <div class="container">
+    <h2 class="section-title" style="text-align:center; margin-bottom:40px;">Partnership Categories</h2>
+
+    <div class="partnership-grid"
+      style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:30px; justify-content:center; align-items:stretch;">
+      
+      <style>
+        .partnership-card {
+          background:#fff;
+          border-radius:12px;
+          overflow:hidden;
+          box-shadow:0 4px 10px rgba(0,0,0,0.08);
+          display:flex;
+          flex-direction:column;
+          justify-content:space-between;
+          height:100%;
+          transition:transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .partnership-card:hover {
+          transform:translateY(-5px);
+          box-shadow:0 6px 16px rgba(0,0,0,0.12);
+        }
+        .card-header {
+          background:#3d4453;
+          color:#fff;
+          text-align:center;
+          padding:50px 20px 30px;
+          display:flex;
+          flex-direction:column;
+          align-items:center;
+          justify-content:center;
+          min-height:180px;
+        }
+        .card-icon {
+          background:#3d4453;
+          color:#fff;
+          border-radius:50%;
+          width:80px;
+          height:80px;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          font-size:36px;
+          margin-bottom:15px;
+          box-shadow:0 4px 10px rgba(0,0,0,0.2);
+          transition: all 0.3s ease;
+        }
+        .partnership-card:hover .card-icon {
+          transform: scale(1.1);
+          box-shadow: 0 0 15px rgba(255,102,0,0.6);
+          background: #FF6600;
+        }
+        .card-title {
+          font-weight:700;
+          font-size:1.3rem;
+          margin-bottom:5px;
+        }
+        .card-subtitle {
+          font-size:0.95rem;
+          opacity:0.9;
+        }
+        .card-content {
+          padding:25px;
+          flex-grow:1;
+          display:flex;
+          flex-direction:column;
+          justify-content:space-between;
+        }
+        .benefits-list {
+          list-style:none;
+          padding:0;
+          margin:0 0 25px;
+          flex-grow:1;
+        }
+        .benefits-list li {
+          margin-bottom:10px;
+          position:relative;
+          padding-left:25px;
+          color:#333;
+        }
+        .benefits-list li::before {
+          content:"✔";
+          color:#FF6600;
+          position:absolute;
+          left:0;
+          top:0;
+        }
+        .card-cta {
+          background-color:#FF6600;
+          color:#fff;
+          border:none;
+          padding:12px 20px;
+          border-radius:6px;
+          font-weight:600;
+          cursor:pointer;
+          width:100%;
+          transition:background-color 0.3s ease;
+        }
+        .card-cta:hover {
+          background-color:#e45b00;
+        }
+        @media (max-width:768px){
+          .partnership-grid {
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+          }
+        }
+      </style>
+
+      <!-- Educational Content Partners -->
+      <div class="partnership-card slide-in-left">
+        <div class="card-header">
+          <div class="card-icon"><i class="fa fa-book"></i></div>
+          <h3 class="card-title">Educational Content Partners</h3>
+          <p class="card-subtitle">Reach underserved student markets</p>
+        </div>
+        <div class="card-content">
+          <ul class="benefits-list">
+            <li>Zero-rated content access for students</li>
+            <li>Integrated student engagement ecosystem</li>
+            <li>Performance analytics and insights</li>
+            <li>Revenue sharing opportunities</li>
+            <li>Co-marketing and promotion</li>
+          </ul>
+          <div style="text-align:center;">
+            <a href="mailto:sales@connectandfunda.com">
+              <button class="card-cta">Request Partnership Info</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Financial Services Partners -->
+      <div class="partnership-card slide-in-right">
+        <div class="card-header">
+          <div class="card-icon"><i class="fa fa-university"></i></div>
+          <h3 class="card-title">Financial Services Partners</h3>
+          <p class="card-subtitle">Student financial inclusion solutions</p>
+        </div>
+        <div class="card-content">
+          <ul class="benefits-list">
+            <li>Access to student and parent markets</li>
+            <li>Secure payment platform integration</li>
+            <li>Financial literacy program opportunities</li>
+            <li>Student savings and investment products</li>
+            <li>Educational loan and funding solutions</li>
+          </ul>
+          <div style="text-align:center;">
+            <a href="mailto:sales@connectandfunda.com">
+              <button class="card-cta">Explore Opportunities</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technology Partners -->
+      <div class="partnership-card slide-in-left">
+        <div class="card-header">
+          <div class="card-icon"><i class="fa fa-mobile-alt"></i></div>
+          <h3 class="card-title">Technology <br>Partners</h3>
+          <p class="card-subtitle">Scale through our <br>platform</p>
+        </div>
+        <div class="card-content">
+          <ul class="benefits-list">
+            <li>Platform integration opportunities</li>
+            <li>Student device programs</li>
+            <li>Technology infrastructure partnerships</li>
+            <li>Joint product development</li>
+            <li>Market expansion support</li>
+          </ul>
+          <div style="text-align:center;">
+            <a href="mailto:sales@connectandfunda.com">
+              <button class="card-cta">Partner With Us</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Investment Partners -->
+      <div class="partnership-card slide-in-right">
+        <div class="card-header">
+          <div class="card-icon"><i class="fa fa-hand-holding-usd"></i></div>
+          <h3 class="card-title">Investment <br>Partners</h3>
+          <p class="card-subtitle">Mission-driven social <br>impact</p>
+        </div>
+        <div class="card-content">
+          <ul class="benefits-list">
+            <li>Strong social impact potential</li>
+            <li>Experienced leadership team</li>
+            <li>Large addressable market</li>
+            <li>Scalable technology platform</li>
+            <li>Clear revenue model</li>
+          </ul>
+          <div style="text-align:center;">
+            <a href="mailto:sales@connectandfunda.com">
+              <button class="card-cta">Investment Information</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Market Stats Section -->
+<section class="market-stats fade-in-up" style="padding: 80px 0; background-color: #FF6600; text-align: center;">
+    <h2 class="section-title" style="margin-bottom: 50px; color: #fff;">Market Opportunity</h2>
+
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 60px; text-align: center;">
+
+        <div>
+            <p style="font-size: 3rem; font-weight: 800; color: #fff; margin: 0;">12.3M</p>
+            <p style="font-size: 1.1rem; color: #fff; margin: 8px 0 0 0;">Students in South Africa</p>
+        </div>
+
+        <div>
+            <p style="font-size: 3rem; font-weight: 800; color: #fff; margin: 0;">84%</p>
+            <p style="font-size: 1.1rem; color: #fff; margin: 8px 0 0 0;">Mobile Penetration</p>
+        </div>
+
+        <div>
+            <p style="font-size: 3rem; font-weight: 800; color: #fff; margin: 0;">R2.1B</p>
+            <p style="font-size: 1.1rem; color: #fff; margin: 8px 0 0 0;">EdTech Market Size</p>
+        </div>
+
+        <div>
+            <p style="font-size: 3rem; font-weight: 800; color: #fff; margin: 0;">65%</p>
+            <p style="font-size: 1.1rem; color: #fff; margin: 8px 0 0 0;">Digital Divide Gap</p>
+        </div>
+
+    </div>
+</section>
+
+    
+
+        <!-- Partnership Process Section -->
+    <section id="partnership-process">
+        <div class="pp-container">
+        <h2 class="pp-title">Partnership Process</h2>
+        <div class="pp-steps">
+            
+            <!-- Step 1 -->
+            <div class="pp-step slide-in-left">
+            <div class="pp-number">1</div>
+            <h3 class="pp-step-title">Initial Contact</h3>
+            <p class="pp-step-desc">
+                Submit partnership inquiry through our contact form or direct email
+            </p>
+            </div>
+    
+            <!-- Step 2 -->
+            <div class="pp-step slide-in-left">
+            <div class="pp-number">2</div>
+            <h3 class="pp-step-title">Discovery Call</h3>
+            <p class="pp-step-desc">
+                Discuss partnership opportunities and mutual value creation
+            </p>
+            </div>
+    
+            <!-- Step 3 -->
+            <div class="pp-step slide-in-left">
+            <div class="pp-number">3</div>
+            <h3 class="pp-step-title">Proposal Development</h3>
+            <p class="pp-step-desc">
+                Develop detailed partnership proposal and integration plan
+            </p>
+            </div>
+    
+            <!-- Step 4 -->
+            <div class="pp-step slide-in-left">
+            <div class="pp-number">4</div>
+            <h3 class="pp-step-title">Agreement & Launch</h3>
+            <p class="pp-step-desc">
+                Finalize partnership agreement and begin implementation
+            </p>
+            </div>
+    
+        </div>
+        </div>
+    </section>
+    
+    <!-- Scoped CSS -->
+    <style>
+    /* ===========================
+        Partnership Process Styles
+        (Scoped to #partnership-process only)
+        =========================== */
+    
+    #partnership-process {
+        background: #f9fafb; /* light gray background */
+        padding: 60px 20px;
+        font-family: Arial, sans-serif;
+    }
+    
+    #partnership-process .pp-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #partnership-process .pp-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #2d3748; /* dark gray */
+        margin-bottom: 40px;
+    }
+    
+    #partnership-process .pp-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+    
+    #partnership-process .pp-step {
+        background: #fff;
+        padding: 25px 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease;
+    }
+    
+    #partnership-process .pp-step:hover {
+        transform: translateY(-5px);
+    }
+    
+    #partnership-process .pp-number {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 15px auto;
+        background: #ff6600; /* orange */
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: transform 0.2s ease;
+    }
+    
+    #partnership-process .pp-step:hover .pp-number {
+        transform: scale(1.1);
+    }
+    
+    #partnership-process .pp-step-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #1a202c;
+    }
+    
+    #partnership-process .pp-step-desc {
+        font-size: 14px;
+        color: #4a5568;
+        line-height: 1.5;
+    }
+    </style>
+    
+
+        <!-- Contact Form Section -->
+    <section id="contact-form-section" class="fade-in-up">
+        <div class="cf-container">
+        <h2 class="cf-title">Start Your Partnership Journey</h2>
+        <div class="cf-form-wrapper">
+            <form class="cf-form">
+            
+            <!-- Partnership Type -->
+            <div class="cf-group">
+                <label for="partnership-type">Partnership Type</label>
+                <select id="partnership-type" name="partnership-type">
+                <option value="">Select Partnership Type</option>
+                <option value="content">Educational Content Partner</option>
+                <option value="financial">Financial Services Partner</option>
+                <option value="technology">Technology Partner</option>
+                <option value="investment">Investment Partner</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+    
+            <!-- Company Name -->
+            <div class="cf-group">
+                <label for="company-name">Company Name</label>
+                <input type="text" id="company-name" name="company-name" required>
+            </div>
+    
+            <!-- Contact Name -->
+            <div class="cf-group">
+                <label for="contact-name">Contact Name</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+            </div>
+    
+            <!-- Email -->
+            <div class="cf-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <!-- Phone -->
+            <div class="cf-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+    
+            <!-- Message -->
+            <div class="cf-group">
+                <label for="message">Partnership Interest Details</label>
+                <textarea id="message" name="message" placeholder="Please describe your partnership interest and how you envision working together..."></textarea>
+            </div>
+    
+            <!-- Submit -->
+            <button type="submit" class="cf-submit">Submit Partnership Inquiry</button>
+            </form>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Scoped CSS -->
+    <style>
+    /* ===========================
+        Contact Form Section Styles
+        (Scoped to #contact-form-section only)
+        =========================== */
+    
+    #contact-form-section {
+        background: #ffffff;
+        padding: 60px 20px;
+        font-family: Arial, sans-serif;
+    }
+    
+    #contact-form-section .cf-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    #contact-form-section .cf-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        color: #2d3748;
+        margin-bottom: 30px;
+    }
+    
+    #contact-form-section .cf-form-wrapper {
+        background: #f9fafb;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    
+    #contact-form-section .cf-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #contact-form-section .cf-group {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #contact-form-section .cf-group label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #1a202c;
+        margin-bottom: 6px;
+    }
+    
+    #contact-form-section .cf-group input,
+    #contact-form-section .cf-group select,
+    #contact-form-section .cf-group textarea {
+        padding: 12px;
+        border: 1px solid #cbd5e0;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    
+    #contact-form-section .cf-group input:focus,
+    #contact-form-section .cf-group select:focus,
+    #contact-form-section .cf-group textarea:focus {
+        border-color: #ff6600;
+        box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.2);
+        outline: none;
+    }
+    
+    #contact-form-section .cf-group textarea {
+        min-height: 120px;
+        resize: vertical;
+    }
+    
+    #contact-form-section .cf-submit {
+        background: #ff6600;
+        color: #fff;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s ease, transform 0.2s ease;
+    }
+    
+    #contact-form-section .cf-submit:hover {
+        background: #e65c00;
+        transform: translateY(-2px);
+    }
+    </style>
+    <!-- Footer -->
+    <footer class="fade-in-up">
+        <div class="container">
+        <div class="footer-content">
+        <div class="footer-logo">
+        <img alt="Connect+Funda Logo" src="images/logo-full.png" style="max-height: 100px;"/>
+        <p><strong>Connectivity is the Foundation</strong> - Expanding and accelerating access to the digital world for educational institutions.</p>
+        </div>
+        <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+        <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Cube WS, 9 The Straight St, Pineslopes AH 2191</p>
+        <p><i class="fas fa-phone"></i> 082 953 5091</p>
+        <p><i class="fas fa-envelope"></i> sales@connectandfunda.co.za</p>
+        </div>
+        <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+        <p>© 2025 Connect+Funda. All Rights Reserved.</p>
+        </div>
+        </div>
+        </footer>
+        <script src="js/script.js"></script>
+<script>
+  // Animation observer
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll(".fade-in-up, .slide-in-left, .slide-in-right").forEach(el => {
+    observer.observe(el);
+  });
+
+  // Mobile Menu Toggle
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.querySelector(".mobile-menu-btn i");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuBtn.parentElement.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+      if (navLinks.classList.contains("show")) {
+        menuBtn.classList.remove("fa-bars");
+        menuBtn.classList.add("fa-times");
+      } else {
+        menuBtn.classList.remove("fa-times");
+        menuBtn.classList.add("fa-bars");
+      }
+    });
+  });
+</script>
+</body>
+</html>  
+
+    
