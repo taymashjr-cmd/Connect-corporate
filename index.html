@@ -207,6 +207,142 @@
   </div>
   </div>
   </section>
+ <!-- Our Partners Section -->
+<section class="partners-section">
+  <div class="partners-container">
+    <h2 class="partners-title">Our Partners</h2>
+    <p class="partners-intro">
+      Connect+Funda boasts world-class partners that help it deliver the highest levels of service to its customers.
+    </p>
+
+    <div class="partners-slider">
+      <div class="partners-track">
+        <div class="partner-box"><img src="images/partners/mvnxlogo-og.png" alt="MVNX" /></div>
+        <div class="partner-box"><img src="images/partners/cellc.png" alt="Cell C" /></div>
+        <div class="partner-box"><img src="images/partners/axiz.png" alt="Axiz" /></div>
+        <div class="partner-box"><img src="images/partners/dell.png" alt="Dell" /></div>
+        <div class="partner-box"><img src="images/partners/hp.png" alt="HP" /></div>
+        <div class="partner-box"><img src="images/partners/matific.png" alt="Matific" /></div>
+        <div class="partner-box"><img src="images/partners/thooto.png" alt="Thooto AI" /></div>
+
+        <!-- duplicate logos for seamless loop -->
+        <div class="partner-box"><img src="images/partners/mvnxlogo-og.png" alt="MVNX" /></div>
+        <div class="partner-box"><img src="images/partners/cellc.png" alt="Cell C" /></div>
+        <div class="partner-box"><img src="images/partners/axiz.png" alt="Axiz" /></div>
+        <div class="partner-box"><img src="images/partners/dell.png" alt="Dell" /></div>
+        <div class="partner-box"><img src="images/partners/hp.png" alt="HP" /></div>
+        <div class="partner-box"><img src="images/partners/matific.png" alt="Matific" /></div>
+        <div class="partner-box"><img src="images/partners/thooto.png" alt="Thooto AI" /></div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* === OUR PARTNERS SECTION (self-contained styles) === */
+    .partners-section {
+      padding: 80px 0;
+      background-color: #f9f9f9;
+      text-align: center;
+      overflow: hidden;
+      border: 1px solid #ffffff; /* orange border */
+      border-radius: 16px;
+      margin: 60px auto;
+      width: 90%;
+      max-width: 1200px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .partners-container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .partners-title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #3d4453;
+    }
+
+    .partners-intro {
+      font-size: 1.1rem;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 50px;
+      line-height: 1.6;
+    }
+
+    /* === SLIDER === */
+    .partners-slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .partners-track {
+      display: flex;
+      gap: 40px;
+      animation: scrollPartners 25s linear infinite;
+      will-change: transform;
+    }
+
+    @keyframes scrollPartners {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .partner-box {
+      flex: 0 0 150px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .partner-box img {
+      max-width: 100px;
+      max-height: 60px;
+      object-fit: contain;
+      filter: grayscale(50%);
+      opacity: 0.9;
+      transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+    }
+
+    .partner-box:hover img {
+      transform: scale(1.1);
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .partners-track {
+        gap: 25px;
+        animation-duration: 35s;
+      }
+
+      .partner-box {
+        flex: 0 0 120px;
+        height: 80px;
+      }
+
+      .partner-box img {
+        max-width: 80px;
+        max-height: 50px;
+      }
+    }
+  </style>
+</section>
+
+
   <!-- Call to Action -->
   <section class="cta fade-in-up">
   <div class="container">
@@ -239,7 +375,7 @@
         <h3>Contact Us</h3>
         <p><i class="fas fa-map-marker-alt"></i> Cube WS, 9 The Straight St, Pineslopes AH 2191</p>
         <p><i class="fas fa-phone"></i> 082 953 5091</p>
-        <p><i class="fas fa-envelope"></i> sales@connectandfunda.co.za</p>
+        <p><i class="fas fa-envelope"></i> info@connectandfunda.co.za</p>
       </div>
       <div class="footer-social">
         <h3>Follow Us</h3>
