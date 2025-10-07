@@ -85,72 +85,240 @@
             <p>Get in touch with our team to discuss your educational technology needs</p>
         </div>
     </section>
-
-    <!-- Contact Information -->
-    <section class="contact-info">
-        <div class="container">
-            <div class="contact-grid" style="text-align:center;">
-                <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>Our Location</h3>
-                    <p>Cube WS, 9 The Straight St, Pineslopes AH 2191</p>
-                </div>
-                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                    <h3>Phone Number</h3>
-                    <p>082 953 5091</p>
-                </div>
-                <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                    <h3>Email Address</h3>
-                    <p>sales@connectedsmartschools.com</p>
-                </div>
-                <div class="contact-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
-                    <h3>Business Hours</h3>
-                    <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Form -->
-    <section class="contact-form" data-aos="zoom-in">
-        <div class="container" style="text-align:center;">
-            <div class="section-header">
-                <h2>Send Us a Message</h2>
-                <div class="underline"></div>
-            </div>
-            <form id="contactForm">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-                    <div class="form-group full-width">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </div>
-                </div>
-            </form>
+<section class="contact-form" data-aos="zoom-in">
+    <div class="container">
+      <div class="section-header">
+        <h2>Send Us a Message</h2>
+        <div class="underline"></div>
+      </div>
+      <form id="contactForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group full-width">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <div class="form-group full-width">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
         </div>
-    </section>
-
+      </form>
+    </div>
+  
+    <style>
+      /* === CONTACT FORM STYLES === */
+      .contact-form {
+        padding: 80px 0;
+        text-align: center;
+        background-color: #f9f9f9;
+      }
+  
+      .contact-form .section-header h2 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+        color: #222;
+      }
+  
+      .contact-form .underline {
+        width: 60px;
+        height: 4px;
+        background-color: #ff6600;
+        margin: 0 auto 40px;
+        border-radius: 2px;
+      }
+  
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px 20px;
+        width: 100%;
+        max-width: 700px; /* same as your contact card max width */
+        margin: 0 auto;
+      }
+  
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+      }
+  
+      .form-group label {
+        font-size: 1rem;
+        margin-bottom: 8px;
+        color: #333;
+      }
+  
+      .form-group input,
+      .form-group textarea {
+        padding: 12px 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+        width: 100%;
+        resize: vertical;
+        box-sizing: border-box;
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+      }
+  
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #ff6600;
+        box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+      }
+  
+      .form-group.full-width {
+        grid-column: 1 / -1; /* stretches across the entire grid */
+      }
+  
+      .btn.btn-primary {
+        padding: 14px 25px;
+        font-size: 1rem;
+        background-color: #ff6600;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+  
+      .btn.btn-primary:hover {
+        background-color: #e55a00;
+      }
+  
+      @media (max-width: 768px) {
+        .form-grid {
+          grid-template-columns: 1fr; /* full width on mobile */
+          gap: 15px;
+        }
+      }
+    </style>
+  </section>
+  <!-- Contact Information -->
+<section class="contact-info">
+    <div class="contact-container">
+      <div class="contact-grid">
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Our Location</h3>
+          <p>Cube WS, 9 The Straight St, Pineslopes AH 2191</p>
+        </div>
+  
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <h3>Phone Number</h3>
+          <p>082 953 5091</p>
+        </div>
+  
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Email Address</h3>
+          <p>info@connectandfunda.co.za</p>
+        </div>
+  
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Sales</h3>
+          <p>sales@connectandfunda.co.za</p>
+        </div>
+  
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Partnerships</h3>
+          <p>partnerships@connectandfunda.co.za</p>
+        </div>
+  
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="450">
+          <div class="contact-icon"><i class="fas fa-clock"></i></div>
+          <h3>Business Hours</h3>
+          <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+        </div>
+      </div>
+    </div>
+  
+    <style>
+      /* === CONTACT INFO SECTION (self-contained styles) === */
+      .contact-info {
+        padding: 80px 0;
+        background-color: #f9f9f9;
+        text-align: center;
+      }
+  
+      .contact-container {
+        width: 90%;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+  
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        justify-items: center;
+        align-items: stretch;
+      }
+  
+      .contact-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 30px 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+        max-width: 320px;
+      }
+  
+      .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+  
+      .contact-icon {
+        font-size: 2rem;
+        color: #ff6600;
+        margin-bottom: 10px;
+      }
+  
+      .contact-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+        color: #222;
+      }
+  
+      .contact-card p {
+        font-size: 1rem;
+        color: #555;
+        margin: 0;
+      }
+  
+      @media (max-width: 768px) {
+        .contact-info {
+          padding: 60px 0;
+        }
+  
+        .contact-card {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </section>
     <!-- Map -->
     <section class="map" data-aos="fade-up">
         <div class="container" style="text-align:center;">
@@ -185,7 +353,7 @@
                     <h3>Contact Us</h3>
                     <p><i class="fas fa-map-marker-alt"></i> Cube WS, 9 The Straight St, Pineslopes AH 2191</p>
                     <p><i class="fas fa-phone"></i> 082 953 5091</p>
-                    <p><i class="fas fa-envelope"></i> sales@connectedsmartschools.com</p>
+                    <p><i class="fas fa-envelope"></i> info@connectandfunda.co.za</p>
                 </div>
                 <div class="footer-social">
                     <h3>Follow Us</h3>
