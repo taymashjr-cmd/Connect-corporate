@@ -176,7 +176,21 @@
   
   <div class="container">
     <div class="hero-content">
-      <h1 class="fade-in-up hero-title">Fuel Your Future. <span>Live Connected.</span></h1>
+            <h1 class="fade-in-up hero-title responsive-title">
+        Fuel your future. <span>Live connected.</span>
+    </h1>
+    
+    <style>
+    .responsive-title {
+        white-space: nowrap; /* Keep on one line by default (desktop) */
+    }
+    
+    @media (max-width: 768px) {
+        .responsive-title {
+            white-space: normal; /* Allow wrapping on mobile */
+        }
+    }
+    </style>
       <p class="fade-in-up hero-subtext" style="animation-delay: 0.4s;">
         South Africa’s first education-focused technology platform combining connectivity, content and community impact to democratise access to quality education
       </p>
