@@ -696,5 +696,39 @@ setInterval(() => {
     });
   });
 </script>
+  <!-- WhatsApp Floating Icon -->
+<a id="whatsappPopup" 
+   href="https://wa.me/2784094832?text=Chat%20with%20us" 
+   target="_blank" 
+   style="
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+   ">
+   <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+  // Show WhatsApp popup on page load
+  window.addEventListener('load', function() {
+    const waPopup = document.getElementById('whatsappPopup');
+    waPopup.style.opacity = '1';
+  });
+</script>
+
 </body>
 </html>
