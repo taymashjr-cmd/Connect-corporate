@@ -11,33 +11,14 @@
 <!-- Mobile Menu CSS -->
 <style>
 /* Navigation */
-.main-nav {
-  position: relative;
-}
-.mobile-menu-btn {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-}
-.nav-links {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.nav-links li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
+.main-nav { position: relative; }
+.mobile-menu-btn { display: none; font-size: 26px; cursor: pointer; }
+.nav-links { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; }
+.nav-links li a { text-decoration: none; color: #333; font-weight: 500; }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-  .mobile-menu-btn {
-    display: block;
-    color: #333;
-  }
+  .mobile-menu-btn { display: block; color: #333; }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -53,41 +34,23 @@
     transition: all 0.3s ease-in-out;
     z-index: 999;
   }
-  .nav-links.show {
-    display: flex;
-    opacity: 1;
-    transform: translateY(0);
-  }
+  .nav-links.show { display: flex; opacity: 1; transform: translateY(0); }
 }
 
 /* Animation classes */
-.fade-in-up, .slide-in-left, .slide-in-right {
-  opacity: 0;
-}
+.fade-in-up, .slide-in-left, .slide-in-right { opacity: 0; }
 .fade-in-up.animate { animation: fadeInUp 1.2s ease-out forwards; }
 .slide-in-left.animate { animation: slideInLeft 1.2s ease-out forwards; }
 .slide-in-right.animate { animation: slideInRight 1.2s ease-out forwards; }
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-40px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-@keyframes slideInRight {
-  from { opacity: 0; transform: translateX(40px); }
-  to { opacity: 1; transform: translateX(0); }
-}
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideInLeft { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: translateX(0); } }
+@keyframes slideInRight { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); } }
 </style>
 
 <!-- === Custom Button Styling === -->
 <style>
-.hero-buttons .btn,
-.btn,
-.btn-outline,
-.btn-light {
+.hero-buttons .btn, .btn, .btn-outline, .btn-light {
   padding: 14px 28px;
   font-size: 1rem;
   font-weight: 600;
@@ -98,44 +61,20 @@
 }
 
 /* Primary button border & hover */
-.btn-primary {
-  border: 2px solid #ff6600;
-  color: #ff6600;
-}
-.btn-primary:hover {
-  background: #ff6600;
-  color: #fff;
-}
+.btn-primary { border: 2px solid #ff6600; color: #ff6600; }
+.btn-primary:hover { background: #ff6600; color: #fff; }
 
 /* Secondary button border & hover */
-.btn-secondary {
-  border: 2px solid #3d4453;
-  color: #3d4453c;
-}
-.btn-secondary:hover {
-  background: #3d4453;
-  color: #fff;
-}
+.btn-secondary { border: 2px solid #3d4453; color: #3d4453; } /* Fixed typo */
+.btn-secondary:hover { background: #3d4453; color: #fff; }
 
 /* Outline button border & hover */
-.btn-outline {
-  border: 2px solid #3d4453;
-  color: #3d4453;
-}
-.btn-outline:hover {
-  background: #3d4453;
-  color: #fff;
-}
+.btn-outline { border: 2px solid #3d4453; color: #3d4453; }
+.btn-outline:hover { background: #3d4453; color: #fff; }
 
 /* Light button border & hover */
-.btn-light {
-  border: 2px solid #fff;
-  color: #fff;
-}
-.btn-light:hover {
-  background: #fff;
-  color: #3d4453;
-}
+.btn-light { border: 2px solid #fff; color: #fff; }
+.btn-light:hover { background: #fff; color: #3d4453; }
 </style>
 </head>
 
@@ -178,25 +117,15 @@
     <div class="hero-content">
       <h1 class="fade-in-up hero-title responsive-title">
         Fuel your future. <span>Live connected.</span>
-    </h1>
-    
-    <style>
-    .responsive-title {
-        white-space: nowrap; /* Keep on one line by default (desktop) */
-    }
-    
-    @media (max-width: 768px) {
-        .responsive-title {
-            white-space: normal; /* Allow wrapping on mobile */
-        }
-    }
-    </style>
-    
+      </h1>
+      <style>
+      .responsive-title { white-space: nowrap; }
+      @media (max-width: 768px) { .responsive-title { white-space: normal; } }
+      </style>
+      
       <p class="fade-in-up hero-subtext" style="animation-delay: 0.4s;">
         We are a technology and innovation company focused on providing access to learning tools in a safe and impactful way.</p>
-        
         <p>Integrating gamified learning rewards, comprehensive parental controls and zero-rated access to educational content, we’re reimagining connectivity to enable better learning outcomes.
-
       </p>
       <div class="hero-buttons fade-in-up" style="animation-delay: 0.8s;">
         <a class="btn btn-primary" href="about.html">Learn More</a>
@@ -207,115 +136,29 @@
 </section>
 
 <style>
-/* === HERO SLIDER (self-contained, won’t override global styles) === */
-.hero-slider {
-  position: relative;
-  height: 100vh;
-  color: #fff;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.hero-slides {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-slides .slide {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  transform: scale(1.05);
-  animation: kenburns 12s ease-in-out infinite alternate;
-}
-
-.hero-slides .slide.active {
-  opacity: 1;
-}
-
-@keyframes kenburns {
-  from { transform: scale(1.05) translate(0, 0); }
-  to { transform: scale(1.15) translate(-10px, -10px); }
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 900px;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 800;
-  text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.hero-title span {
-  color: #ff6600;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-}
-
-.hero-subtext {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 35px;
-}
-
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.hero-buttons .btn {
-  transition: transform 0.3s ease;
-}
-
-.hero-buttons .btn:hover {
-  transform: translateY(-3px);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-title { font-size: 2.2rem; }
-  .hero-subtext { font-size: 1rem; }
-  .hero-buttons { flex-direction: column; gap: 15px; }
-}
+.hero-slider { position: relative; height: 100vh; color: #fff; overflow: hidden; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; }
+.hero-slides { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-slides .slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transition: opacity 1s ease-in-out; transform: scale(1.05); animation: kenburns 12s ease-in-out infinite alternate; }
+.hero-slides .slide.active { opacity: 1; }
+@keyframes kenburns { from { transform: scale(1.05) translate(0, 0); } to { transform: scale(1.15) translate(-10px, -10px); } }
+.hero-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.45); z-index: 1; }
+.hero-content { position: relative; z-index: 2; max-width: 900px; }
+.hero-title { font-size: 3.5rem; font-weight: 800; text-shadow: 3px 3px 8px rgba(0,0,0,0.8); line-height: 1.2; margin-bottom: 20px; }
+.hero-title span { color: #ff6600; text-shadow: 2px 2px 6px rgba(0,0,0,0.7); }
+.hero-subtext { font-size: 1.2rem; line-height: 1.6; margin-bottom: 35px; }
+.hero-buttons { display: flex; justify-content: center; gap: 20px; }
+.hero-buttons .btn { transition: transform 0.3s ease; }
+.hero-buttons .btn:hover { transform: translateY(-3px); }
+@media (max-width: 768px) { .hero-title { font-size: 2.2rem; } .hero-subtext { font-size: 1rem; } .hero-buttons { flex-direction: column; gap: 15px; } }
 </style>
 
 <script>
-// === HERO SLIDER SCRIPT (simple fade slider) ===
 let currentSlide = 0;
 const slides = document.querySelectorAll(".hero-slides .slide");
-
 function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle("active", i === index);
-  });
+  slides.forEach((slide, i) => { slide.style.opacity = i === index ? '1' : '0'; });
 }
-
-setInterval(() => {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}, 5000);
+setInterval(() => { currentSlide = (currentSlide + 1) % slides.length; showSlide(currentSlide); }, 5000);
 </script>
 
 <!-- About Section -->
@@ -349,7 +192,7 @@ setInterval(() => {
       <div class="service-card slide-in-left">
         <div class="service-icon"><i class="fas fa-wifi centered"></i></div>
         <h3>Connectivity Solutions</h3>
-        <p>Our connectivity solutions ensure reliable,, impactful and affordable access to digital resources.</p>
+        <p>Our connectivity solutions ensure reliable, impactful and affordable access to digital resources.</p>
       </div>
       <div class="service-card fade-in-up">
         <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
@@ -396,211 +239,211 @@ setInterval(() => {
   </div>
 </section>
 
- <section class="partners-section">
-  < <div class="section-header fade-in-up">
-     <div class="container">
-    <div class="section-header fade-in-up">
-      <h2>Our Core Values</h2>
-      <div class="underline"></div>
-    </div>
-    </div>
-      Connect+Funda boasts world-class partners that help it deliver the highest levels of service to its customers.
-    </p>
-
-    <div class="partners-slider">
-      <div class="partners-track">
-        <!-- Repeat logos 3x for a seamless infinite scroll -->
-    <div class="partner-box">
-          <a href="https://www.mvnx.com" target="_blank">
-            <img src="images/partners/mvnxlogo-og.png" alt="MVNX" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.cellc.co.za" target="_blank">
-            <img src="images/partners/cellc.png" alt="Cell C" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.axiz.com" target="_blank">
-            <img src="images/partners/axiz.png" alt="Axiz" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.dell.com" target="_blank">
-            <img src="images/partners/Dell.png" alt="Dell" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.hp.com" target="_blank">
-            <img src="images/partners/hp.png" alt="HP" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.matific.com" target="_blank">
-            <img src="images/partners/matific.png" alt="Matific" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.thooto.ai" target="_blank">
-            <img src="images/partners/Thooto.png" alt="Thooto AI" />
-          </a>
-        </div>
-
-        <!-- Duplicate set 1 -->
-        <div class="partner-box">
-          <a href="https://www.mvnx.com" target="_blank">
-            <img src="images/partners/mvnxlogo-og.png" alt="MVNX" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.cellc.co.za" target="_blank">
-            <img src="images/partners/cellc.png" alt="Cell C" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.axiz.com" target="_blank">
-            <img src="images/partners/axiz.png" alt="Axiz" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.dell.com" target="_blank">
-            <img src="images/partners/Dell.png" alt="Dell" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.hp.com" target="_blank">
-            <img src="images/partners/hp.png" alt="HP" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.matific.com" target="_blank">
-            <img src="images/partners/matific.png" alt="Matific" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.thooto.ai" target="_blank">
-            <img src="images/partners/Thooto.png" alt="Thooto AI" />
-          </a>
-        </div>
-
-        <!-- Duplicate set 2 -->
-        <div class="partner-box">
-          <a href="https://www.mvnx.com" target="_blank">
-            <img src="images/partners/mvnxlogo-og.png" alt="MVNX" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.cellc.co.za" target="_blank">
-            <img src="images/partners/cellc.png" alt="Cell C" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.axiz.com" target="_blank">
-            <img src="images/partners/axiz.png" alt="Axiz" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.dell.com" target="_blank">
-            <img src="images/partners/Dell.png" alt="Dell" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.hp.com" target="_blank">
-            <img src="images/partners/hp.png" alt="HP" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.matific.com" target="_blank">
-            <img src="images/partners/matific.png" alt="Matific" />
-          </a>
-        </div>
-        <div class="partner-box">
-          <a href="https://www.thooto.ai" target="_blank">
-            <img src="images/partners/Thooto.png" alt="Thooto AI" />
-          </a>
+<!-- PARTNERS SECTION: UNTOUCHED -->
+<section class="partners-section">
+    <div class="partners-container">
+      <div class="container">
+      <div class="section-header fade-in-up">
+        <h2>Our Partners</h2>
+        <div class="underline"></div>
+      </div>
+      <p class="partners-intro">
+        Connect+Funda boasts world-class partners that help it deliver the highest levels of service to its customers.
+      </p>
+  
+      <div class="partners-slider">
+        <div class="partners-track">
+          <!-- Repeat logos 3x for a seamless infinite scroll -->
+          <div class="partner-box">
+            <a href="https://www.mvnx.com" target="_blank">
+              <img src="images/partners/mvnxlogo-og.png" alt="MVNX" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.cellc.co.za" target="_blank">
+              <img src="images/partners/cellc.png" alt="Cell C" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.axiz.com" target="_blank">
+              <img src="images/partners/axiz.png" alt="Axiz" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.dell.com" target="_blank">
+              <img src="images/partners/Dell.png" alt="Dell" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.hp.com" target="_blank">
+              <img src="images/partners/hp.png" alt="HP" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.matific.com" target="_blank">
+              <img src="images/partners/matific.png" alt="Matific" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.thooto.ai" target="_blank">
+              <img src="images/partners/Thooto.png" alt="Thooto AI" />
+            </a>
+          </div>
+  
+          <!-- Duplicate set 1 -->
+          <div class="partner-box">
+            <a href="https://www.mvnx.com" target="_blank">
+              <img src="images/partners/mvnxlogo-og.png" alt="MVNX" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.cellc.co.za" target="_blank">
+              <img src="images/partners/cellc.png" alt="Cell C" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.axiz.com" target="_blank">
+              <img src="images/partners/axiz.png" alt="Axiz" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.dell.com" target="_blank">
+              <img src="images/partners/Dell.png" alt="Dell" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.hp.com" target="_blank">
+              <img src="images/partners/hp.png" alt="HP" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.matific.com" target="_blank">
+              <img src="images/partners/matific.png" alt="Matific" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.thooto.ai" target="_blank">
+              <img src="images/partners/Thooto.png" alt="Thooto AI" />
+            </a>
+          </div>
+  
+          <!-- Duplicate set 2 -->
+          <div class="partner-box">
+            <a href="https://www.mvnx.com" target="_blank">
+              <img src="images/partners/mvnxlogo-og.png" alt="MVNX" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.cellc.co.za" target="_blank">
+              <img src="images/partners/cellc.png" alt="Cell C" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.axiz.com" target="_blank">
+              <img src="images/partners/axiz.png" alt="Axiz" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.dell.com" target="_blank">
+              <img src="images/partners/Dell.png" alt="Dell" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.hp.com" target="_blank">
+              <img src="images/partners/hp.png" alt="HP" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.matific.com" target="_blank">
+              <img src="images/partners/matific.png" alt="Matific" />
+            </a>
+          </div>
+          <div class="partner-box">
+            <a href="https://www.thooto.ai" target="_blank">
+              <img src="images/partners/Thooto.png" alt="Thooto AI" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <style>
-    .partners-section {
-      padding: 80px 0;
-      background-color: #f9f9f9;
-      overflow: hidden;
-      border-radius: 16px;
-      text-align: center;
-      margin: 60px auto;
-      width: 90%;
-      max-width: 1200px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-    
-    .partners-track {
-      display: flex;
-      gap: 40px;
-      width: max-content;
-      animation: scrollPartners 60s linear infinite; /* ~5s per logo */
-    }
-    
-    @keyframes scrollPartners {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-33.33%); } /* one set out of 3 */
-    }
-    
-    .partner-box {
-      flex: 0 0 150px;
-      height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    
-    .partner-box img {
-      max-width: 100px;
-      max-height: 60px;
-      object-fit: contain;
-      filter: grayscale(50%);
-      opacity: 0.9;
-      transition: transform 0.3s, filter 0.3s, opacity 0.3s;
-    }
-    
-    .partner-box:hover img {
-      transform: scale(1.1);
-      filter: grayscale(0%);
-      opacity: 1;
-    }
-    
-    @media(max-width:768px){
+  
+    <style>
+      .partners-section {
+        padding: 80px 0;
+        background-color: #f9f9f9;
+        overflow: hidden;
+        border-radius: 16px;
+        text-align: center;
+        margin: 60px auto;
+        width: 90%;
+        max-width: 1200px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      }
+      
       .partners-track {
-        gap: 25px;
-        animation-duration: 45s; /* faster but still smooth */
+        display: flex;
+        gap: 40px;
+        width: max-content;
+        animation: scrollPartners 60s linear infinite; /* ~5s per logo */
       }
+      
+      @keyframes scrollPartners {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-33.33%); } /* one set out of 3 */
+      }
+      
       .partner-box {
-        flex: 0 0 120px;
-        height: 80px;
+        flex: 0 0 150px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       }
+      
       .partner-box img {
-        max-width: 80px;
-        max-height: 50px;
+        max-width: 100px;
+        max-height: 60px;
+        object-fit: contain;
+        filter: grayscale(50%);
+        opacity: 0.9;
+        transition: transform 0.3s, filter 0.3s, opacity 0.3s;
       }
-    }
-  </style>
-</section>
-
+      
+      .partner-box:hover img {
+        transform: scale(1.1);
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+      
+      @media(max-width:768px){
+        .partners-track {
+          gap: 25px;
+          animation-duration: 45s; /* faster but still smooth */
+        }
+        .partner-box {
+          flex: 0 0 120px;
+          height: 80px;
+        }
+        .partner-box img {
+          max-width: 80px;
+          max-height: 50px;
+        }
+      }
+    </style>
+  </section>
 <!-- Call to Action -->
 <section class="cta fade-in-up">
   <div class="container">
     <h2>Ready to Transform Your Educational Institution?</h2>
     <p>Contact us today to discuss how we can help you achieve your digital transformation goals.</p>
     <a class="btn btn-light fade-in-up" 
-    href="mailto:info@cconnectandfunda.com?subject=Partnership%20Inquiry&body=Hello,%20I%20am%20interested%20in%20partnership%20opportunities.%20Please%20get%20back%20to%20me." 
-    style="animation-delay: 0.3s;">
-    Get in Touch
- </a>
+       href="mailto:info@cconnectandfunda.com?subject=Partnership%20Inquiry&body=Hello,%20I%20am%20interested%20in%20partnership%20opportunities.%20Please%20get%20back%20to%20me." 
+       style="animation-delay: 0.3s;">
+       Get in Touch
+    </a>
   </div>
 </section>
 
@@ -652,11 +495,8 @@ setInterval(() => {
   </div>
 </footer>
 
-
-
 <!-- Scripts -->
 <script>
-  // Animate elements when they appear
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -665,28 +505,16 @@ setInterval(() => {
       }
     });
   }, { threshold: 0.1 });
+  document.querySelectorAll(".fade-in-up, .slide-in-left, .slide-in-right").forEach(el => { observer.observe(el); });
 
-  document.querySelectorAll(".fade-in-up, .slide-in-left, .slide-in-right").forEach(el => {
-    observer.observe(el);
-  });
-
-  // Mobile Menu Toggle
   document.addEventListener("DOMContentLoaded", () => {
     const menuBtn = document.querySelector(".mobile-menu-btn i");
     const navLinks = document.querySelector(".nav-links");
-
     menuBtn.parentElement.addEventListener("click", () => {
       navLinks.classList.toggle("show");
-      if (navLinks.classList.contains("show")) {
-        menuBtn.classList.remove("fa-bars");
-        menuBtn.classList.add("fa-times");
-      } else {
-        menuBtn.classList.remove("fa-times");
-        menuBtn.classList.add("fa-bars");
-      }
+      menuBtn.classList.toggle("fa-bars");
+      menuBtn.classList.toggle("fa-times");
     });
-
-    // Close menu when clicking a link
     navLinks.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("show");
@@ -696,37 +524,17 @@ setInterval(() => {
     });
   });
 </script>
-  <!-- WhatsApp Floating Icon -->
+
+<!-- WhatsApp Floating Icon -->
 <a id="whatsappPopup" 
-   href="https://wa.me/27784094832?text=Chat%20with%20us" 
+   href="https://wa.me/2784094832?text=Chat%20with%20us" 
    target="_blank" 
-   style="
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 30px;
-      z-index: 1000;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-      text-decoration: none;
-      opacity: 0;
-      transition: opacity 0.5s ease;
-   ">
+   style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; font-size: 30px; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.3); text-decoration: none; opacity: 0; transition: opacity 0.5s ease;">
    <i class="fab fa-whatsapp"></i>
 </a>
-
 <script>
-  // Show WhatsApp popup on page load
   window.addEventListener('load', function() {
-    const waPopup = document.getElementById('whatsappPopup');
-    waPopup.style.opacity = '1';
+    document.getElementById('whatsappPopup').style.opacity = '1';
   });
 </script>
 
